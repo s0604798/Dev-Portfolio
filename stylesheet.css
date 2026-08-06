@@ -16,6 +16,7 @@
 
 /*##################################################// JS CLASSES*/
 .hide { display: none; }
+.open { transform: rotate(90deg); }
 
 /*DM Mono*/
 @font-face {
@@ -69,34 +70,35 @@ header {
     gap: 1em;
 }
 
+header > * {
+    padding: 1em;
+}
+
 /*##################################################/ Title*/
 .title {
     background-color: var(--medium);
 }
 
 /*##################################################/ Navigation*/
-.nav {
-    background-color: var(--medium);
-    padding: 1em;
-}
+.nav { background-color: var(--medium); }
 
 /* Main Navigation */
 /*#nav {  }*/
-#nav > ul {
-    list-style-type: none;
-
-}
+#nav > ul { list-style-type: none; }
 
 #nav > ul li { text-indent: 0; }
 
 /* Project Navigation */
-.expandable {
+.expandable button {
     border: none; background: transparent;
     font-size: 1em;
 }
 
-.expandable:hover {
-    filter: brightness(0.5);
+.expandable span { display: inline-block; transition: transform 0.1s; }
+.expandable button { transition: filter 0.1s; }
+
+.expandable button:hover {
+    filter: brightness(0.75);
 }
 
 /*#projects {  }*/
@@ -107,6 +109,11 @@ header {
 
 #projects > ul li {
     text-indent: 1em;
+    transition: filter 0.1s;
+}
+
+#projects > ul li:hover {
+    filter: brightness(0.75);
 }
 
 

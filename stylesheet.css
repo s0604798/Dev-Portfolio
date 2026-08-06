@@ -85,19 +85,19 @@ header > * {
 /* Main Navigation */
 /*#nav {  }*/
 #nav > ul { list-style-type: none; }
-
-#nav > ul li { text-indent: 0; }
+#nav > ul > li { text-indent: 0; transition: filter 0.1s; }
+#nav > ul > li:hover { filter: brightness(0.75); }
 
 /* Project Navigation */
-.expandable button {
+.expandable > button {
     border: none; background: transparent;
     font-size: 1em;
 }
 
-.expandable span { display: inline-block; transition: transform 0.1s; }
-.expandable button { transition: filter 0.1s; }
+.expandable > span { display: inline-block; transition: transform 0.1s; }
+.expandable > button { transition: filter 0.1s; }
 
-.expandable button:hover {
+.expandable > button:hover {
     filter: brightness(0.75);
 }
 
@@ -107,12 +107,12 @@ header > * {
     list-style-position: inside;
 }
 
-#projects > ul li {
+#projects > ul > li {
     text-indent: 1em;
     transition: filter 0.1s;
 }
 
-#projects > ul li:hover {
+#projects > ul > li:hover {
     filter: brightness(0.75);
 }
 
@@ -131,6 +131,11 @@ main {
     overflow-y: scroll;
     scrollbar-color: white rgba(0,0,0,0);
     scrollbar-width: thin;
+}
+
+/*##################################################/ Display*/
+#display {
+    border: none;
 }
 
 /*##################################################// FOOTER*/

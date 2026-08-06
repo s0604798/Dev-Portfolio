@@ -16,17 +16,17 @@
             <div class="nav" id="nav-container">
                 <nav id="nav">
                     <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="resume.html">Experience</a></li>
+                        <li class="page" data-src="about.html">About Me</li>
+                        <li class="page" data-src="resume.html">Experience</li>
                         <li>
                             <div class="expandable">
                                 <span>></span>
                                 <button>Personal Projects</button>
                                 <nav class="hide" id="projects">
                                     <ul>
-                                        <li><a href="sampleProjects/projectX.html">Project X</a></li>
-                                        <li><a href="sampleProjects/projectY.html">Project Y</a></li>
-                                        <li><a href="sampleProjects/projectY.html">Project Z</a></li>
+                                        <li class="page" data-src="sampleProjects/projectX.html"><a src="sampleProjects/projectX.html">Project X</a></li>
+                                        <li class="page" data-src="sampleProjects/projectY.html"><a src="sampleProjects/projectY.html">Project Y</a></li>
+                                        <li class="page" data-src="sampleProjects/projectZ.html"><a src="sampleProjects/projectY.html">Project Z</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -39,7 +39,7 @@
             </div>
         </header>
         <main>
-            <p>main</p>
+            <iframe id=display src="about.html" width="100%" height="100%"></iframe>
         </main>
         <script type="text/javascript" src="scripts.js" async></script>
     </body>

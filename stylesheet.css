@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    appearance: none;
 
     font-family: DM Mono;
     font-weight: normal;
@@ -12,6 +13,9 @@
     --medium: rgb(60, 60, 60);
     --dark: rgb(20, 20, 20);
 }
+
+/*##################################################// JS CLASSES*/
+.hide { display: none; }
 
 /*DM Mono*/
 @font-face {
@@ -73,30 +77,39 @@ header {
 /*##################################################/ Navigation*/
 .nav {
     background-color: var(--medium);
+    padding: 1em;
 }
 
 /* Main Navigation */
-#nav {}
-
+/*#nav {  }*/
 #nav > ul {
     list-style-type: none;
 
 }
 
-#nav > ul li {
-
-}
+#nav > ul li { text-indent: 0; }
 
 /* Project Navigation */
-#projects {}
+.expandable {
+    border: none; background: transparent;
+    font-size: 1em;
+}
 
+.expandable:hover {
+    filter: brightness(0.5);
+}
+
+/*#projects {  }*/
 #projects > ul {
-    list-style-type: none;
+    list-style-type: '# ';
+    list-style-position: inside;
 }
 
 #projects > ul li {
     text-indent: 1em;
 }
+
+
 
 /*##################################################/ Socials*/
 .socials {

@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: Junicode;
+    font-weight: normal;
     color: white;
 }
 
@@ -8,6 +11,36 @@
     --light: rgb(100, 100, 100);
     --medium: rgb(60, 60, 60);
     --dark: rgb(20, 20, 20);
+}
+
+/*Juni Code*/
+@font-face {
+    font-family: 'Junicode'; font-weight: normal;
+    src: url('fonts/JuniCode/Junicode.ttf');
+} @font-face {
+    font-family: 'Junicode'; font-weight: bold;
+    src: url('fonts/JuniCode/JunicodeBold.ttf');
+} @font-face {
+    font-family: 'Junicode'; font-style: italic;
+    src: url('fonts/JuniCode/Junicode-Italic.ttf');
+} @font-face {
+    font-family: 'Junicode'; font-weight: bold; font-style: italic;
+    src: url('fonts/JuniCode/Junicode-BoldItalic.ttf');
+}
+
+/*Space Mono*/
+@font-face {
+    font-family: 'Spacemono'; font-weight: normal;
+    src: url('fonts/SpaceMono/SpaceMono-Regular.ttf');
+} @font-face {
+    font-family: 'Spacemono'; font-weight: bold;
+    src: url('fonts/SpaceMono/SpaceMono-Bold.ttf');
+} @font-face {
+    font-family: 'Spacemono'; font-style: italic;
+    src: url('fonts/SpaceMono/SpaceMono-Italic.ttf');
+} @font-face {
+    font-family: 'Spacemono'; font-weight: bold; font-style: italic;
+    src: url('fonts/SpaceMono/SpaceMono-BoldItalic.ttf');
 }
 
 body {

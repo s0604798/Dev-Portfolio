@@ -128,14 +128,16 @@ main {
     background: var(--medium);
     grid-column: 2 / 3; grid-row: 1 / 2;
 
-    overflow-y: scroll;
-    scrollbar-color: white rgba(0,0,0,0);
-    scrollbar-width: thin;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
+main::-webkit-scrollbar { display: none }
 
 /*##################################################/ Display*/
-#display {
-    border: none;
+main > div {
+    width: 100%; height: 100%;
+    scroll-snap-align: start;
 }
 
 /*##################################################// FOOTER*/
